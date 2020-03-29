@@ -1,0 +1,19 @@
+{% extends "base_tempate.html" %}
+
+{% block middle %} 
+
+  <h2>city :- {{fname}}</h2>
+	<a href="/">click</a>
+	{{covid_19 | safe}}
+	<hr>
+	<hr>
+	{{data_city | safe}}
+
+    
+{% endblock %}
+
+{% block side2 %}
+<h2>corona outbreak helpline number </h2>
+<h3>state-->{{state}}</h3>
+<h3>number-->{{number}}</h3>
+{% endblock %}

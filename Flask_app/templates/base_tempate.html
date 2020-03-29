@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    
+    
+
+        <title>title</title>
+        <link rel='stylesheet' href='/static/css/app2.css'
+        type='text/css'>
+        <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+
+        {% block head %}
+                                                                                                                
+        {% endblock %}
+    </head>
+    <body>
+        <div id="header">
+           
+
+            {% block header %}
+            {% endblock %}
+        </div>
+
+        <div id='left'>
+            <hr>
+                
+            {% block side1 %}
+            {% endblock %}
+        </div>
+        <div id='middle'>
+            <hr>
+            &nbsp;&nbsp;&nbsp;
+
+            
+              
+                {% block middle %}
+                {% endblock %}
+
+        </div>
+        <div id="right">
+            <hr>
+                
+                {% block side2 %}
+                {% endblock %}
+        </div>   
+        <div id='footer'>
+                <h1> All Rights are Reserved at &copy;co19-help</h1>
+                {% block footer %}
+                {% endblock %}
+            </div> 
+
+
+        
+    </body>
+</html>

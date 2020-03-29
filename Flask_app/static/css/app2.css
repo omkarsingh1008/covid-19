@@ -1,0 +1,56 @@
+
+body { 
+    background: #efefef;
+    margin: 0px;
+    padding: 0px; 
+}
+
+
+#header { 
+text-align: center;
+    width: 100%; 
+    margin: 0px;
+    padding: 0px; 
+
+
+}
+
+
+#left { 
+    margin: 0px;
+    width: 20%; 
+    padding: 0px;
+    float: left;  
+    text-align: center;
+
+}
+#middle { 
+    margin: 0px;
+    width : 60%; 
+    padding: 0px;
+    float: left; 
+    text-align: center;
+   
+
+
+}
+#right { 
+    margin: 0px;
+    width : 20%; 
+    padding: 0px;
+    float: left;
+    text-align: center;
+
+}
+
+#footer { 
+    clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+#form, #profile{ 
+    text-align: center;
+    
+    padding: 100px; 
+}
