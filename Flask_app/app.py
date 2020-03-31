@@ -31,7 +31,7 @@ def data():
 
 	fe=['name','rating','user_ratings_total','vicinity']
 	city=num.replace(" ",'%20') #we are use google api to retrive data
-	url="https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input={}&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyDNqwMjAeyo8YyILwwNuSvuadLGf10gd9w"
+	url="https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input={}&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key={}"
 	url=url.format(city) # here we are format a city name in url
 	page=requests.get(url)
 	if page.status_code == 200 : #check data is get or not if code status is 200 means we get a data
@@ -44,7 +44,7 @@ def data():
 	data1=pd.DataFrame(columns=['category','name','rating','user_ratings_total','vicinity'])#creating a new dataframe
 	index=0
 	for fet in fetures:
-		url="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={},{}&rankby=distance&type={}&key=AIzaSyDNqwMjAeyo8YyILwwNuSvuadLGf10gd9w"
+		url="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={},{}&rankby=distance&type={}&key={}"
 		url=url.format(lat,lng,fet)
 		page=requests.get(url)
 		if page.status_code == 200 : 
